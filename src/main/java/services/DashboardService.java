@@ -49,7 +49,7 @@ public class DashboardService {
         return bookList;
     }
 
-    public Book deleteBookById(Long id) throws Exception {
+    public Book deleteBook(Long id) throws Exception {
         Book bookById = getBookById(id);
         bookList = bookList.stream()
                 .filter(b -> !b.getId().equals(id)).collect(Collectors.toList());

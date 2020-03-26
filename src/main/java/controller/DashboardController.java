@@ -35,6 +35,6 @@ public class DashboardController {
 
     @DeleteMapping("{id}")
     public Book deleteBook(@PathVariable Long id) throws Exception {
-        return dashboardService.deleteBookById(id);
+        return dashboardService.deleteBook(id);
     }
 }
